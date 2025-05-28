@@ -72,7 +72,7 @@ Make sure your battery.json data file is located in the src/data/ directory (i.e
     This will execute the tests defined in `test/useBatteryData.test.ts` and output the results in your terminal.
 
 
-* **Trade-offs and Future Scope
+## Trade-offs and Future Scope
 This solution provides a robust and clean foundation within the given time constraints, prioritizing quality for the initial version. The following features were considered but scoped out to maintain focus and deliver a polished MVP:
 
 Advanced Filtering & Sorting:
