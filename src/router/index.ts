@@ -1,15 +1,22 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/Home.vue'
+import BatteryTable from '../components/BatteryTable.vue'
 
-import { env } from '@/config/env';
 const router = createRouter({
-  history: createWebHistory(env.APP_BASE_PATH),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'Fe Asignment App',
-      component: () => import('../views/Home.vue')
-    }
+      name: 'home',
+      component: HomeView
+    },
+    {
+      path: '/battery-dashboard',
+      name: 'battery-dashboard',
+      component: BatteryTable
+    },
+    // ... other routes
   ]
-});
+})
 
-export default router;
+export default router
